@@ -9,17 +9,40 @@
         .calender{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 40px repeat(5 , 87px);
             row-gap: 20px;
             column-gap: 10px;
         }
-        .date{
-            background-color: palegreen;
-            height: 105px;
+        .date , .day{
+            background-color: #98fb98fd;
+            /* height: 75px; */
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
         }
-    </style>
+        .other-month{
+            color: #8f8f8fec;
+            background-color: lightgray;
+        }
+        .day{
+            background-color: #ff6347f5;
+            font-size: 1.09em;
+        }
+        </style>
 </head>
 <body>
     <div class="calender">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wen</div>
+        <div class="day">Th</div>
+        <div class="day">Fr</div>
+        <div class="day">Sat</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
         <div class="date">1</div>
         <div class="date">2</div>
         <div class="date">3</div>
@@ -50,11 +73,9 @@
         <div class="date">28</div>
         <div class="date">29</div>
         <div class="date">30</div>
-        <div class="date">31</div>
-        <div class="date">2</div>
-        <div class="date">3</div>
-        <div class="date">4</div>
-        <div class="date">5</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
     </div>
 </body>
 </html>
