@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <script src="https://kit.fontawesome.com/4e6c12451b.js" crossorigin="anonymous"></script>
+    <style>
+         nav{
+            display: flex;
+            justify-content: space-between;
+         }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            
+        }
+        .login-section{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            /* border: 2px double rgba(238, 139, 238, 0.993); */
+        }
+        .login-form input{
+            margin-top: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+        .login-form input[type="submit"]{
+            background-color: goldenrod;
+            color: antiquewhite;
+            border: 0;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <form action="" class="login-form"></form>
-    <h3>Please Log in</h3>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Rewards</a><a href="">Products</a>
+                <a href="">About Us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-right-form-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-section">
+        <form action="" class="login-form">
+            <h3>Please Log in</h3>
+            <input type="email" name="" id="" placeholder="your e-mail" required>
+            <input type="password" name="" id="" placeholder="your password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 </html>
