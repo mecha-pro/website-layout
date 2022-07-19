@@ -8,11 +8,21 @@
     <style>
         .container{
             border: 5px double palegreen;
+            display: flex;
+            align-items: stretch;/*The height needs to be turned off of .box */
+            height: 300px;
+            /* justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; */
         }
         .box{
-            height: 100px;
+            font-size: 3ex;
+            /* height: 100px; */
             width: 300px;
-            border: 5px dotted brown;
+            border: 5px dashed brown;
+        }
+        #box-3{
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -20,7 +30,15 @@
     <div class="container">
         <div class="box">Box:1</div>
         <div class="box">Box:2</div>
-        <div class="box">Box:3</div>
+        <div id="box-3" class="box">Box:3</div>
+        <div class="box">Box:1</div>
+        <div class="box">Box:2</div>
+        <div class="box">Box:1</div>
+        <div class="box">Box:2</div>
+        <div class="box">Box:1</div>
+        <div class="box">Box:2.215</div>
+        <div class="box">Box:15</div>
+        <div class="box">Box:23</div>
     </div>
     <footer></footer>
 </body>
